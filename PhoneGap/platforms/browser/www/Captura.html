@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Captura</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+<body>
+        <div id="page">
+                <div class="header">
+                    <a href="#menu"></a>
+                    Captura API
+                </div>
+    <div class="content">
+        <div class="btn-group-vertical" role="group" aria-label="...">
+            <button onclick="captureAudio();" class="btn-lg btn-success">Capture Audio</button>
+            <br>
+            <button onclick="captureImage();" class="btn-lg btn-warning">Capture Image</button>
+            <br>
+            <button onclick="captureVideo();" class="btn-lg btn-danger">Capture Video</button>
+            <br>
+        </div>
+    
+        <div id="details" style="display:none">
+            <b>File Path : </b> 
+            <div id="fullPath"></div>
+            <br/>
+            <b>File Name : </b> 
+            <div id="name"></div>
+            <br/>
+            <b>Type : </b> 
+            <div id="type"></div>
+            <br/>
+            <b>Last Modified Timestamp : </b> 
+            <div id="lastModifiedDate"></div>
+            <br/>
+            <b>File Size (bytes) : </b> 
+            <div id="size"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Captura.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Camara</title>
+    <link rel="stylesheet" type="text/css" href="css/jquery.mmenu.all.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+</head>
+<body>
+        <div id="page">
+                <div class="header">
+                    <a href="#menu"></a>
+                    Camara API
+                </div>
+    <div class="content">
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#capture" data-toggle="tab">Capture Photo</a>
+            </li>
+            <li><a href="#album" data-toggle="tab">From Album</a>
+            </li>
+        </ul>
+    
+        <div class="tab-content" id="tabs">
+            <div id="capture" class="tab-pane active">
+                <br/>
+                <button onclick="capturePhoto();" class="btn btn-success">Capture Camera Photo</button>
+                <br/>
+                <br/>
+                <img style="display:none;" id="smallImage" src="" class="img-responsive img-rounded" alt="Responsive image" />
+            </div>
+            <div id="album" class="tab-pane">
+                <br/>
+                <button onclick="getPhoto(Camera.PictureSourceType.SAVEDPHOTOALBUM);" class="btn btn-info">Select Image from Album</button>
+                <br/>
+                <br/>
+                <img style="display:none;" id="largeImage" src="" class="img-responsive img-rounded" alt="Responsive image" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mmenu.min.all.js"></script>
+    <script type="text/javascript" src="js/fastclick.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/Camara.js"></script>
+</body>
+</html>
